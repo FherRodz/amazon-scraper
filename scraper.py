@@ -28,7 +28,7 @@ localSoup.close()
 containers = pageSoup.findAll('div',{'class':'sg-col-4-of-24 sg-col-4-of-12 sg-col-4-of-36 s-result-item sg-col-4-of-28 sg-col-4-of-16 sg-col sg-col-4-of-20 sg-col-4-of-32'})
 
 
-with open('output-reviews.csv', 'w', newline="", encoding='UTF-8') as csv_file:
+with open('output-data.csv', 'w', newline="", encoding='UTF-8') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(['name', 'rating', 'price'])
     for container in containers:
